@@ -171,29 +171,11 @@ def handleErrData():
                         print("connect fail")
                         pass
     except:
-        print("Handle error !!!")
+        # print("Handle error !!!")
+        pass
 
 
 try:
-
-    # t0 = threading.Thread(target=read, args=("/dev/hidraw0",))
-    # t1 = threading.Thread(target=read, args=("/dev/hidraw1",))
-    # t2 = threading.Thread(target=read, args=("/dev/hidraw2",))
-    # t3 = threading.Thread(target=device, args=())
-    # t4 = threading.Thread(target=handleErrData, args=())
-    
-    # t0.start()
-    # t1.start()
-    # t2.start()
-    # t3.start()
-    # t4.start()
-
-    # t0.join()
-    # t1.join()
-    # t2.join()
-    # t3.join()
-    # t4.join()
-
     threads = list()
 
     threads.append(threading.Thread(target=read, args=("/dev/hidraw0",)))
